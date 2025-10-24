@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Junior H — CSS Interna</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#121a2b;
+      --text:#e6f0ff;
+      --accent:#79b8ff;
+      --accent-2:#34d399;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; padding:24px;
+      background: radial-gradient(1200px 600px at 70% -10%, #1b2a47 0%, var(--bg) 55%),
+                  radial-gradient(900px 400px at -10% 110%, #12213b 0%, var(--bg) 55%);
+      color:var(--text);
+      font-family:'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height:1.6;
+    }
+    nav a{
+      display:inline-block; padding:10px 16px; margin:0 8px 16px 0;
+      text-decoration:none; border-radius:12px; font-weight:700;
+    }
+    nav a:nth-child(1){ background:#e5e7eb; color:#0b1220; }
+    nav a:nth-child(2){ background:var(--accent); color:#0b1220; }
+    nav a:nth-child(3){ background:var(--accent-2); color:#0b1220; }
+    h1{ margin:0 0 8px; font-size:40px; }
+    h2{ margin:0 0 16px; font-size:20px; font-weight:400; opacity:.9; }
+    p{ max-width:900px; font-size:18px; }
+    .card{
+      background:var(--card);
+      border:1px solid rgba(255,255,255,.06);
+      border-radius:16px;
+      padding:18px;
+      box-shadow:0 10px 30px rgba(0,0,0,.35);
+      max-width:980px;
+    }
+    img{
+      width:min(100%, 560px);
+      border-radius:12px;
+      box-shadow:0 8px 24px rgba(0,0,0,.5);
+      display:block;
+      margin:0 0 16px;
+    }
+    .embed{
+      aspect-ratio:16/9;
+      width:min(100%, 560px);
+      background:#000;
+      border-radius:12px;
+      overflow:hidden;
+    }
+    .embed iframe{ width:100%; height:100%; display:block; }
+    a.link{ color:#a7f3d0; text-decoration:underline; font-weight:700; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="inline.html">Ver versión inline</a>
+    <a href="interna.html">Ver versión interna</a>
+    <a href="externa.html">Ver versión externa</a>
+  </nav>
+
+  <div class="card">
+    <h1>Junior H</h1>
+    <h2>Jesús Osvaldo Ramos Pérez — A01713833</h2>
+
+    <p>
+      Junior H (Antonio Herrera Pérez), nacido el 23 de abril de 2001 en San Juan Cerano, Guanajuato, es un referente
+      de los corridos tumbados al mezclar regional mexicano con ritmos urbanos. Su álbum <em>Atrapado en un sueño</em> (2020)
+      lo proyectó internacionalmente. Me identifico con sus letras honestas y su sencillez artística.
+    </p>
+
+    <img
+      src="https://raw.githubusercontent.com/osvaldo-ram/IoTwebb.io/main/folder/img/junior.jpg"
+      alt="Junior H en concierto"
+    >
+
+    <p>
+      <a class="link" href="https://www.youtube.com/@JuniorH_Oficial" target="_blank">Sitio oficial de YouTube de Junior H</a>
+    </p>
+
+    <div class="embed">
+      <iframe
+        src="https://www.youtube.com/embed/e9de2dEXWUw"
+        title="Junior H - Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</body>
+</html>
