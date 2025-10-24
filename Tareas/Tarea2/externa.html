@@ -1,47 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Junior H — CSS Externa</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior H - Estilos Externos</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <nav class="nav">
-    <a class="btn btn--light" href="inline.html">Ver versión inline</a>
-    <a class="btn btn--primary" href="interna.html">Ver versión interna</a>
-    <a class="btn btn--success" href="externa.html">Ver versión externa</a>
-  </nav>
+    <nav class="navegacion">
+        <a href="inline.html" class="nav-enlace">Inline</a>
+        <a href="interna.html" class="nav-enlace">Interna</a>
+        <a href="externa.html" class="nav-enlace">Externa</a>
+    </nav>
 
-  <main class="card">
-    <h1>Junior H</h1>
-    <h2>Jesús Osvaldo Ramos Pérez — A01713833</h2>
+    <header class="encabezado">
+        <h1>Junior H</h1>
+        <h2>Antonio Herrera Pérez - Voz del Pueblo</h2>
+    </header>
 
-    <p>
-      Junior H (Antonio Herrera Pérez), nacido en Guanajuato (2001), es cantante y compositor que popularizó
-      los corridos tumbados. Con <em>Atrapado en un sueño</em> (2020) alcanzó gran proyección.
-      Sus letras me llegan por su honestidad y su vibra melancólica.
-    </p>
+    <main class="contenido">
+        <section class="seccion">
+            <p>
+                <strong>Junior H</strong>, cuyo nombre real es Antonio Herrera Pérez, nació el 23 de abril de 2001 en San Juan Cerano, Guanajuato, México.
+            </p>
+            <p>
+                Es un cantante y compositor mexicano conocido por popularizar los <em>corridos tumbados</em>, fusionando música regional mexicana con ritmos urbanos modernos. Su estilo único ha revolucionado el género regional mexicano, atrayendo a una audiencia más joven.
+            </p>
+            <p>
+                Saltó a la fama con su álbum <strong>"Atrapado en un sueño"</strong> en 2020 y desde entonces ha mantenido una trayectoria ascendente en la música regional mexicana, colaborando con artistas reconocidos y llenando auditorios.
+            </p>
+            <p>
+                Lo admiro por su autenticidad y por la profundidad emocional de sus letras, que aunque a veces tratan temas melancólicos, crean una conexión única con el oyente. Su humildad y dedicación son inspiradoras.
+            </p>
+        </section>
 
-    <img
-      src="https://raw.githubusercontent.com/osvaldo-ram/IoTwebb.io/main/folder/img/junior.jpg"
-      alt="Junior H cantando"
-      class="hero-img"
-    >
+        <div class="contenedor-flex">
+            <div class="columna">
+                <img src="https://raw.githubusercontent.com/osvaldo-ram/IoTwebb.io/main/folder/img/junior.jpg" 
+                     alt="Junior H" 
+                     class="imagen-artista">
+            </div>
+            
+            <div class="columna">
+                <a href="https://www.youtube.com/@JuniorH_Oficial" 
+                   target="_blank" 
+                   class="enlace-externo">
+                   🎤 Visitar Canal Oficial de YouTube
+                </a>
+                
+                <div class="video-contenedor">
+                    <iframe 
+                        src="https://www.youtube.com/embed/e9de2dEXWUw" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <p>
-      <a class="link-ext" href="https://www.youtube.com/@JuniorH_Oficial" target="_blank">Sitio oficial de YouTube de Junior H</a>
-    </p>
-
-    <div class="embed">
-      <iframe
-        src="https://www.youtube.com/embed/e9de2dEXWUw"
-        title="Junior H - Video"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-    </div>
-  </main>
+    <footer class="pie-pagina">
+        <p>© 2024 - Práctica de Estilos CSS - Jesús Osvaldo Ramos Pérez - A01713833</p>
+    </footer>
 </body>
 </html>

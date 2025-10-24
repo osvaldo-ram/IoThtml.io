@@ -1,97 +1,210 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Junior H — CSS Interna</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#0b1220;
-      --card:#121a2b;
-      --text:#e6f0ff;
-      --accent:#79b8ff;
-      --accent-2:#34d399;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0; padding:24px;
-      background: radial-gradient(1200px 600px at 70% -10%, #1b2a47 0%, var(--bg) 55%),
-                  radial-gradient(900px 400px at -10% 110%, #12213b 0%, var(--bg) 55%);
-      color:var(--text);
-      font-family:'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      line-height:1.6;
-    }
-    nav a{
-      display:inline-block; padding:10px 16px; margin:0 8px 16px 0;
-      text-decoration:none; border-radius:12px; font-weight:700;
-    }
-    nav a:nth-child(1){ background:#e5e7eb; color:#0b1220; }
-    nav a:nth-child(2){ background:var(--accent); color:#0b1220; }
-    nav a:nth-child(3){ background:var(--accent-2); color:#0b1220; }
-    h1{ margin:0 0 8px; font-size:40px; }
-    h2{ margin:0 0 16px; font-size:20px; font-weight:400; opacity:.9; }
-    p{ max-width:900px; font-size:18px; }
-    .card{
-      background:var(--card);
-      border:1px solid rgba(255,255,255,.06);
-      border-radius:16px;
-      padding:18px;
-      box-shadow:0 10px 30px rgba(0,0,0,.35);
-      max-width:980px;
-    }
-    img{
-      width:min(100%, 560px);
-      border-radius:12px;
-      box-shadow:0 8px 24px rgba(0,0,0,.5);
-      display:block;
-      margin:0 0 16px;
-    }
-    .embed{
-      aspect-ratio:16/9;
-      width:min(100%, 560px);
-      background:#000;
-      border-radius:12px;
-      overflow:hidden;
-    }
-    .embed iframe{ width:100%; height:100%; display:block; }
-    a.link{ color:#a7f3d0; text-decoration:underline; font-weight:700; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior H - Estilos Internos</title>
+    <style>
+        body {
+            background-color: #0f1a2a;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .navegacion {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .nav-enlace {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-enlace:hover {
+            background-color: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+
+        .encabezado {
+            text-align: center;
+            padding: 30px 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #4fc3f7;
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+        }
+
+        h2 {
+            color: #81c784;
+            font-size: 1.5em;
+            font-weight: 300;
+        }
+
+        .contenido {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .seccion {
+            background: rgba(30, 58, 114, 0.3);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        strong {
+            color: #4fc3f7;
+        }
+
+        .contenedor-flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .columna {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .imagen-artista {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .imagen-artista:hover {
+            transform: scale(1.02);
+        }
+
+        .enlace-externo {
+            display: inline-block;
+            background: linear-gradient(135deg, #4fc3f7, #29b6f6);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(79, 195, 247, 0.3);
+        }
+
+        .enlace-externo:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(79, 195, 247, 0.5);
+        }
+
+        .video-contenedor {
+            margin-top: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 315px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+        }
+
+        .pie-pagina {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #81c784;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
-  <nav>
-    <a href="inline.html">Ver versión inline</a>
-    <a href="interna.html">Ver versión interna</a>
-    <a href="externa.html">Ver versión externa</a>
-  </nav>
+    <nav class="navegacion">
+        <a href="inline.html" class="nav-enlace">Inline</a>
+        <a href="interna.html" class="nav-enlace">Interna</a>
+        <a href="externa.html" class="nav-enlace">Externa</a>
+    </nav>
 
-  <div class="card">
-    <h1>Junior H</h1>
-    <h2>Jesús Osvaldo Ramos Pérez — A01713833</h2>
+    <header class="encabezado">
+        <h1>Junior H</h1>
+        <h2>Antonio Herrera Pérez - El Rey de los Corridos Tumbados</h2>
+    </header>
 
-    <p>
-      Junior H (Antonio Herrera Pérez), nacido el 23 de abril de 2001 en San Juan Cerano, Guanajuato, es un referente
-      de los corridos tumbados al mezclar regional mexicano con ritmos urbanos. Su álbum <em>Atrapado en un sueño</em> (2020)
-      lo proyectó internacionalmente. Me identifico con sus letras honestas y su sencillez artística.
-    </p>
+    <main class="contenido">
+        <section class="seccion">
+            <p>
+                <strong>Junior H</strong>, cuyo nombre real es Antonio Herrera Pérez, nació el 23 de abril de 2001 en San Juan Cerano, Guanajuato, México.
+            </p>
+            <p>
+                Es un cantante y compositor mexicano conocido por popularizar los <em>corridos tumbados</em>, fusionando música regional mexicana con ritmos urbanos modernos. Su estilo único ha revolucionado el género regional mexicano, atrayendo a una audiencia más joven.
+            </p>
+            <p>
+                Saltó a la fama con su álbum <strong>"Atrapado en un sueño"</strong> en 2020 y desde entonces ha mantenido una trayectoria ascendente en la música regional mexicana, colaborando con artistas reconocidos y llenando auditorios.
+            </p>
+            <p>
+                Lo admiro por su autenticidad y por la profundidad emocional de sus letras, que aunque a veces tratan temas melancólicos, crean una conexión única con el oyente. Su humildad y dedicación son inspiradoras.
+            </p>
+        </section>
 
-    <img
-      src="https://raw.githubusercontent.com/osvaldo-ram/IoTwebb.io/main/folder/img/junior.jpg"
-      alt="Junior H en concierto"
-    >
+        <div class="contenedor-flex">
+            <div class="columna">
+                <img src="https://raw.githubusercontent.com/osvaldo-ram/IoTwebb.io/main/folder/img/junior.jpg" 
+                     alt="Junior H" 
+                     class="imagen-artista">
+            </div>
+            
+            <div class="columna">
+                <a href="https://www.youtube.com/@JuniorH_Oficial" 
+                   target="_blank" 
+                   class="enlace-externo">
+                   🎵 Visitar Canal Oficial de YouTube
+                </a>
+                
+                <div class="video-contenedor">
+                    <iframe 
+                        src="https://www.youtube.com/embed/e9de2dEXWUw" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <p>
-      <a class="link" href="https://www.youtube.com/@JuniorH_Oficial" target="_blank">Sitio oficial de YouTube de Junior H</a>
-    </p>
-
-    <div class="embed">
-      <iframe
-        src="https://www.youtube.com/embed/e9de2dEXWUw"
-        title="Junior H - Video"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-    </div>
-  </div>
+    <footer class="pie-pagina">
+        <p>© 2024 - Práctica de Estilos CSS - Jesús Osvaldo Ramos Pérez - A01713833</p>
+    </footer>
 </body>
 </html>

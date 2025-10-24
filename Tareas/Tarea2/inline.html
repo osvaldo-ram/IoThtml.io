@@ -1,52 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Junior H — Inline</title>
-  <!-- Puedes usar Google Fonts aun en versión inline; el estilo se aplica con atributos -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junior H - Estilos Inline</title>
 </head>
-<body style="margin:0; padding:24px; background: #0f0f10; color:#f2f2f2; font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height:1.6;">
+<body style="background-color: #1a1a1a; color: #ffffff; font-family: Arial, sans-serif; margin: 0; padding: 20px;">
+    <!-- Navegación -->
+    <nav style="background-color: #333; padding: 15px; text-align: center; border-radius: 10px; margin-bottom: 20px;">
+        <a href="inline.html" style="color: #ff6b6b; text-decoration: none; margin: 0 15px; font-weight: bold; padding: 8px 15px; background-color: #444; border-radius: 5px;">Inline</a>
+        <a href="interna.html" style="color: #6bff6b; text-decoration: none; margin: 0 15px; font-weight: bold; padding: 8px 15px; background-color: #444; border-radius: 5px;">Interna</a>
+        <a href="externa.html" style="color: #6b6bff; text-decoration: none; margin: 0 15px; font-weight: bold; padding: 8px 15px; background-color: #444; border-radius: 5px;">Externa</a>
+    </nav>
 
-  <!-- Navegación -->
-  <nav style="margin-bottom:20px;">
-    <a href="inline.html"  style="display:inline-block; padding:8px 14px; margin-right:8px; text-decoration:none; color:#0f0f10; background:#f2f2f2; border-radius:10px; font-weight:700;">Ver versión inline</a>
-    <a href="interna.html" style="display:inline-block; padding:8px 14px; margin-right:8px; text-decoration:none; color:#f2f2f2; background:#1f6feb; border-radius:10px; font-weight:700;">Ver versión interna</a>
-    <a href="externa.html" style="display:inline-block; padding:8px 14px; text-decoration:none; color:#0f0f10; background:#9be9a8; border-radius:10px; font-weight:700;">Ver versión externa</a>
-  </nav>
+    <header style="text-align: center; padding: 20px 0;">
+        <h1 style="color: #ff6b6b; font-size: 2.5em; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Junior H</h1>
+        <h2 style="color: #6bff6b; font-size: 1.3em;">Antonio Herrera Pérez - Corridos Tumbados</h2>
+    </header>
 
-  <h1 style="margin:0 0 8px; font-size:36px;">Junior H</h1>
-  <h2 style="margin:0 0 16px; font-size:20px; font-weight:400;">Jesús Osvaldo Ramos Pérez — A01713833</h2>
+    <main style="max-width: 800px; margin: 0 auto; padding: 20px;">
+        <section style="background-color: #2a2a2a; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+            <p style="font-size: 1.1em; line-height: 1.6; text-align: justify;">
+                <strong style="color: #ff6b6b;">Junior H</strong>, cuyo nombre real es Antonio Herrera Pérez, nació el 23 de abril de 2001 en San Juan Cerano, Guanajuato, México.<br><br>
+                Es un cantante y compositor mexicano conocido por popularizar los <em>corridos tumbados</em>, fusionando música regional mexicana con ritmos urbanos modernos.<br><br>
+                Saltó a la fama con su álbum <strong>"Atrapado en un sueño"</strong> en 2020 y desde entonces ha mantenido una trayectoria ascendente en la música regional mexicana.<br><br>
+                Lo admiro por su autenticidad y por la profundidad emocional de sus letras, que aunque a veces tratan temas melancólicos, crean una conexión única con el oyente.
+            </p>
+        </section>
 
-  <p style="max-width:900px; font-size:18px; margin-bottom:20px;">
-    Junior H (Antonio Herrera Pérez), nacido el 23 de abril de 2001 en San Juan Cerano, Guanajuato, es un cantante y compositor
-    que impulsó los corridos tumbados al fusionar música regional con ritmos urbanos. Saltó a la fama con su álbum
-    <em>Atrapado en un sueño</em> (2020). Lo admiro por su humildad y por sus letras profundas que, aunque a veces me pongan
-    triste, no puedo dejar de escuchar.
-  </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+            <div style="flex: 1; min-width: 300px;">
+                <img src="https://raw.githubusercontent.com/osvaldo-ram/IoTwebb.io/main/folder/img/junior.jpg" 
+                     alt="Junior H" 
+                     style="width: 100%; max-width: 500px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+            </div>
+            
+            <div style="flex: 1; min-width: 300px;">
+                <a href="https://www.youtube.com/@JuniorH_Oficial" 
+                   target="_blank" 
+                   style="display: inline-block; background-color: #ff6b6b; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-bottom: 20px; text-align: center;">
+                   🌐 Visitar Canal Oficial de YouTube
+                </a>
+                
+                <div style="margin-top: 20px;">
+                    <iframe 
+                        width="100%" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/e9de2dEXWUw" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen
+                        style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </main>
 
-  <img
-    src="https://raw.githubusercontent.com/osvaldo-ram/IoTwebb.io/main/folder/img/junior.jpg"
-    alt="Junior H en concierto"
-    style="width:min(100%, 520px); display:block; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,.4); margin-bottom:18px;"
-  >
-
-  <p style="margin: 0 0 18px;">
-    <a href="https://www.youtube.com/@JuniorH_Oficial" target="_blank" style="color:#9be9a8; font-weight:700; text-decoration:underline;">Sitio oficial de YouTube de Junior H</a>
-  </p>
-
-  <!-- Usa URL de EMBED para el iframe -->
-  <div style="aspect-ratio:16/9; width:min(100%, 560px); max-width:100%; background:#000; border-radius:12px; overflow:hidden;">
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/e9de2dEXWUw"
-      title="Junior H - Video"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-      style="width:100%; height:100%; display:block;"
-    ></iframe>
-  </div>
+    <footer style="text-align: center; margin-top: 30px; padding: 20px; color: #888;">
+        <p style="font-size: 0.9em;">© 2024 - Práctica de Estilos CSS - A01713833</p>
+    </footer>
 </body>
 </html>
